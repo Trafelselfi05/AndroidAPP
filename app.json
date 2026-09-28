@@ -2,9 +2,9 @@
   "expo": {
     "name": "v2Absens",
     "slug": "v2Absens",
-    "version": "1.0.0",
+    "version": "1.2.5",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/favicon.png",
     "scheme": "v2absens",
     "userInterfaceStyle": "automatic",
     "ios": {
@@ -13,11 +13,10 @@
     "android": {
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/images/android-icon-foreground.png",
-        "backgroundImage": "./assets/images/android-icon-background.png",
-        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+        "foregroundImage": "./assets/images/favicon.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.jowokowioweng911.v2Absens"
     },
     "web": {
       "bundler": "metro",
@@ -29,14 +28,21 @@
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/splash-icon.png",
+          "image": "./assets/images/favicon.png",
           "resizeMode": "contain",
-          "backgroundColor": "#ffffff"
+          "backgroundColor": "#bababa"
         }
-      ]
+      ],
+      "@react-native-community/datetimepicker"
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "1652a939-7dfd-4711-ae26-2e097ba591e4"
+      }
     }
   }
 }
